@@ -67,6 +67,7 @@ ExclamationPointMoveSets:
 	db SHARPEN
 	db SLASH
 	db SUBSTITUTE
+	db SHADOW_BALL
 	db 0 ; end set
 
 	db -1 ; end
