@@ -164,6 +164,9 @@ AttackAnimationPointers:
 	dw SuperFangAnim
 	dw SlashAnim
 	dw SubstituteAnim
+	dw ShadowBallAnim
+	dw DracoMeterAnim
+	dw DragonClawAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -1138,6 +1141,20 @@ SubstituteAnim:
 	battle_anim NO_MOVE, SE_SUBSTITUTE_MON
 	db -1 ; end
 
+ShadowBallAnim:
+	battle_anim CONFUSION, SE_FLASH_SCREEN_LONG
+	battle_anim NO_MOVE, SE_WAVY_SCREEN
+	db -1 ; end
+
+DracoMeterAnim:
+	battle_anim ICE_BEAM, SUBANIM_0_BEAM, 0, 3
+	battle_anim NO_MOVE, SUBANIM_0_ICE_RISE, 0, 16
+	db -1 ; end
+
+DragonClawAnim:
+	battle_anim SLASH, SUBANIM_0_SCRATCHES, 0, 6
+	db -1 ; end
+	
 BallTossAnim:
 	battle_anim NO_MOVE, SUBANIM_0_BALL_TOSS_HIGH, 0, 3
 	db -1 ; end

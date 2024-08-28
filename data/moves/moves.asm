@@ -12,7 +12,7 @@ Moves:
 ; Characteristics of each move.
 	table_width MOVE_LENGTH, Moves
 	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING,     95, 25
+	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING,      95, 25
 	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,       100, 35
 	move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, NORMAL,       100, 25
 	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,        85, 20
@@ -97,8 +97,8 @@ Moves:
 	move THUNDERSHOCK, PARALYZE_SIDE_EFFECT1,       40, ELECTRIC,     100, 30
 	move THUNDERBOLT,  PARALYZE_SIDE_EFFECT1,       95, ELECTRIC,     100, 15
 	move THUNDER_WAVE, PARALYZE_EFFECT,              0, ELECTRIC,     100, 20
-	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, ELECTRIC,      85, 5
-	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,         95, 25
+	move THUNDER,      PARALYZE_SIDE_EFFECT1,      120, ELECTRIC,      85,  5
+	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        50, ROCK,          95, 25
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 10
 	move FISSURE,      OHKO_EFFECT,                  1, GROUND,        30,  5
 	move DIG,          CHARGE_EFFECT,               70, GROUND,       100, 20
@@ -122,7 +122,7 @@ Moves:
 	move CONFUSE_RAY,  CONFUSION_EFFECT,             0, GHOST,        100, 10
 	move WITHDRAW,     DEFENSE_UP1_EFFECT,           0, BIRD,         100, 40
 	move DEFENSE_CURL, DEFENSE_UP1_EFFECT,           0, BIRD,         100, 40
-	move BARRIER,      DEFENSE_UP2_EFFECT,           0, BIRD,	        100, 30
+	move BARRIER,      DEFENSE_UP2_EFFECT,           0, BIRD,	      100, 30
 	move LIGHT_SCREEN, LIGHT_SCREEN_EFFECT,          0, BIRD,         100, 30
 	move HAZE,         HAZE_EFFECT,                  0, BIRD,         100, 30
 	move REFLECT,      REFLECT_EFFECT,               0, BIRD,         100, 20
@@ -145,7 +145,7 @@ Moves:
 	move CONSTRICT,    SPEED_DOWN_SIDE_EFFECT,      40, NORMAL,       100, 35
 	move AMNESIA,      SPECIAL_UP2_EFFECT,           0, BIRD,         100, 20
 	move KINESIS,      ACCURACY_DOWN1_EFFECT,        0, BIRD,         80,  15
-	move SOFTBOILED,   HEAL_EFFECT,                  0, BIRD,         100, 5
+	move SOFTBOILED,   HEAL_EFFECT,                  0, BIRD,         100,  5
 	move HI_JUMP_KICK, JUMP_KICK_EFFECT,           120, FIGHTING,      90, 20
 	move GLARE,        PARALYZE_EFFECT,              0, BIRD,          90, 30
 	move DREAM_EATER,  DREAM_EATER_EFFECT,         100, PSYCHIC_TYPE, 100, 15
@@ -171,9 +171,12 @@ Moves:
 	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         80, NORMAL,        90, 15
 	move SHARPEN,      ATTACK_UP1_EFFECT,            0, BIRD,         100, 30
 	move CONVERSION,   CONVERSION_EFFECT,            0, BIRD,         100, 30
-	move TRI_ATTACK,   BURN_SIDE_EFFECT2,            85, NORMAL,       100, 15
+	move TRI_ATTACK,   BURN_SIDE_EFFECT2,            85, NORMAL,      100, 15
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, BIRD,         100, 10
+	move SHADOW_BALL,  NO_ADDITIONAL_EFFECT,	    80, GHOST,		  100, 10
+	move DRACO_METER,  NO_ADDITIONAL_EFFECT,	   130, DRAGON,		   90, 10
+	move DRAGON_CLAW,  NO_ADDITIONAL_EFFECT,		80, DRAGON,		  100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10
 	assert_table_length NUM_ATTACKS

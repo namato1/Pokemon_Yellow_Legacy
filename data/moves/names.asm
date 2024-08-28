@@ -164,5 +164,8 @@ MoveNames::
 	li "SUPER FANG"
 	li "SLASH"
 	li "SUBSTITUTE"
+	li "SHADOW BALL"
+	li "DRACO METER"
+	li "DRAGON CLAW"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
