@@ -145,6 +145,9 @@ PokedexOrder:
 	db DEX_CHARMELEON
 	db DEX_WARTORTLE
 	db DEX_CHARIZARD
+	db 0 ; Fossil_K
+	db 0 ; Fossil_O
+	db 0 ; Ghost
 	db DEX_ODDISH
 	db DEX_GLOOM
 	db DEX_VILEPLUME
