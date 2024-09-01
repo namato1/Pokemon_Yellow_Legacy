@@ -178,5 +178,5 @@ Moves:
 	move SHADOW_BALL,  NO_ADDITIONAL_EFFECT,	    80, GHOST,		  100, 10
 	move DRACO_METER,  NO_ADDITIONAL_EFFECT,	   130, DRAGON,		   90, 10
 	move DRAGON_CLAW,  NO_ADDITIONAL_EFFECT,		80, DRAGON,		  100, 20
-	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10
+	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
