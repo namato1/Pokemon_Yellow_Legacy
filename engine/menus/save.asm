@@ -666,7 +666,7 @@ ClearSAV:
 
 PadSRAM_FF:
 	ld [MBC1SRamBank], a
-	ld hl, STARTOF(SRAM0)
+	ld hl, STARTOF(SRAM)
 	ld bc, SIZEOF(SRAM)
 	ld a, $ff
 	jp FillMemory
