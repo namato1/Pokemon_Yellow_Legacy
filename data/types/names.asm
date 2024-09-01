@@ -9,19 +9,23 @@ TypeNames:
 	dw .Rock
 	dw .Normal
 	dw .Bug
-	dw .Ghost
+	dw .Steel
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
 ENDR
 
+	dw .Dark
+	dw .Fairy
 	dw .Fire
 	dw .Water
 	dw .Grass
 	dw .Electric
 	dw .Psychic
+	dw .Ghost
 	dw .Ice
 	dw .Dragon
+	dw .Typeless
 
 	assert_table_length NUM_TYPES
 
@@ -41,3 +45,7 @@ ENDR
 .Bug:      db "BUG@"
 .Ghost:    db "GHOST@"
 .Dragon:   db "DRAGON@"
+.Steel:	   db "STEEL@"
+.Dark:	   db "DARK@"
+.Fairy:	   db "FAIRY@"
+.Typeless: db "TYPELESS@"
