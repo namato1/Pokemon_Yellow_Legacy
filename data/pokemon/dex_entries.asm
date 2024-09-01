@@ -145,6 +145,9 @@ PokedexEntryPointers:
 	dw CharmeleonDexEntry
 	dw WartortleDexEntry
 	dw CharizardDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
+	dw MissingNoDexEntry
 	dw OddishDexEntry
 	dw GloomDexEntry
 	dw VileplumeDexEntry
@@ -1214,3 +1217,9 @@ MewDexEntry:
 	dw 90
 	text_far _MewDexEntry
 	text_end
+
+MissingNoDexEntry:
+	db "???@"
+	db 10 ; 1.0 m
+	dw 100 ; 10.0 kg
+	db "No Comment"
