@@ -2637,3 +2637,5 @@ SECTION "Stack", WRAM0
 ; the stack grows downward
 	ds $eb - 1
 wStack:: db
+
+ENDSECTION
