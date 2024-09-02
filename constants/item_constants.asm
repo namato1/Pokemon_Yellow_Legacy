@@ -216,6 +216,9 @@ DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 DEF __tmhm_value__ = NUM_TM_HM + 1
 DEF UNUSED_TMNUM EQU __tmhm_value__
 
+DEF MAX_HIDDEN_ITEMS EQU 112
+DEF MAX_HIDDEN_COINS EQU 16
+
 ; used for Time Capsule held item compatibility
 DEF TWISTEDSPOON_GSC EQU $60
 DEF LIGHT_BALL_GSC   EQU $a3
