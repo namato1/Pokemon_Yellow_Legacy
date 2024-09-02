@@ -32,7 +32,7 @@ OpenSRAM::
 
 CloseSRAM::
 	push af
-	ld a, SRAM_Disable
+	ld a, SRAM_DISABLE
 	ld [MBC1SRamBankingMode], a
 	ld [MBC1SRamEnable], a
 	pop af
