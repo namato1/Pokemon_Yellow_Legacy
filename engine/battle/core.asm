@@ -389,6 +389,21 @@ MainInBattleLoop:
 	jr z, .compareSpeed ; if both used Counter
 	jr c, .enemyMovesFirst
 	jr .playerMovesFirst
+;.playerDidNotUseQuickAttack
+;	ld a, [wEnemySelectedMove]
+;	cp QUICK_ATTACK
+;	jr z, .enemyMovesFirst ; if enemy used Quick Attack and player didn't
+;	ld a, [wPlayerSelectedMove]
+;	cp COUNTER
+;	jr nz, .playerDidNotUseCounter
+;	ld a, [wEnemySelectedMove]
+;	cp COUNTER
+;	jr z, .compareSpeed ; if both used Counter
+;	jr .enemyMovesFirst ; if player used Counter and enemy didn't
+;.playerDidNotUseCounter
+;	ld a, [wEnemySelectedMove]
+;	cp COUNTER
+;	jr z, .playerMovesFirst ; if enemy used Counter and player didn't
 .compareSpeed
 	ld de, wBattleMonSpeed ; player speed value
 	ld hl, wEnemyMonSpeed ; enemy speed value
@@ -6601,6 +6616,7 @@ LoadPlayerBackPic:
 	ld de, RedPicBack
 .next
 	ld a, BANK(RedPicBack)
+	assert BANK(RedPicBack) == BANK(OldManPicBack)
 .GreenSpriteLoaded
 	ASSERT BANK(GreenPicBack) == BANK(OldManPicBack) ; These two ASSERTs make sure to cover
 	ASSERT BANK(RedPicBack) == BANK(OldManPicBack)   ; both sprite cases
