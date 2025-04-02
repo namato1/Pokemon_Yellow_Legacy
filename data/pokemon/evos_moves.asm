@@ -405,6 +405,7 @@ GengarEvosMoves:
 	db 36, NIGHT_SHADE
 	db 55, HYPNOSIS
 	db 55, DREAM_EATER
+	db 62, SHADOW_BALL
 	db 0
 
 NidoranFEvosMoves:
@@ -500,6 +501,7 @@ MewEvosMoves:
 	db 25, PSYBEAM
 	db 30, METRONOME
 	db 40, PSYCHIC_M
+	db 50, SHADOW_BALL
 	db 0
 
 GyaradosEvosMoves:
@@ -561,6 +563,7 @@ GastlyEvosMoves:
 	db 36, NIGHT_SHADE
 	db 55, HYPNOSIS
 	db 55, DREAM_EATER
+	db 62, SHADOW_BALL
 	db 0
 
 ScytherEvosMoves:
@@ -1868,8 +1871,9 @@ MewtwoEvosMoves:
 	db 63, BARRIER
 	db 66, PSYCHIC_M
 	db 70, RECOVER
-	db 75, MIST
-	db 81, AMNESIA
+	db 75, SHADOW_BALL
+	db 80, MIST
+	db 85, AMNESIA
 	db 0
 
 SnorlaxEvosMoves:
@@ -2042,6 +2046,7 @@ HaunterEvosMoves:
 	db 36, NIGHT_SHADE
 	db 55, HYPNOSIS
 	db 55, DREAM_EATER
+	db 62, SHADOW_BALL
 	db 0
 
 AbraEvosMoves:
