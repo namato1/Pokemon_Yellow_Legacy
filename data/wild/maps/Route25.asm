@@ -5,7 +5,7 @@ Route25WildMons:
 	db 13, ABRA
 	db 14, ODDISH
 	db 14, BELLSPROUT
-	db 15, PIDGEY
+	db 15, CHARMANDER
 	db 13, VENONAT
 	db 16, VENONAT
 	db 17, PIDGEY
