@@ -10,6 +10,7 @@ DEF PHYSICAL EQU const_value
 	const ROCK         ; $05
 	const BUG          ; $06
 	const STEEL		   ; $07
+	const TYPELESS	   ; $08
 
 DEF UNUSED_TYPES EQU const_value
 	const_next 20
@@ -26,6 +27,5 @@ DEF UNUSED_TYPES_END EQU const_value
 	const DRAGON       ; $1B
 	const DARK		   ; $1C
 	const FAIRY		   ; $1D
-	const TYPELESS	   ; $1E
 
 DEF NUM_TYPES EQU const_value

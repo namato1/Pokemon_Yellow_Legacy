@@ -7,9 +7,9 @@ TypeNames:
 	dw .Poison
 	dw .Ground
 	dw .Rock
-	dw .Normal
 	dw .Bug
 	dw .Steel
+	dw .Typeless
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
@@ -25,7 +25,7 @@ ENDR
 	dw .Dragon
 	dw .Dark
 	dw .Fairy
-	dw .Typeless
+	
 
 	assert_table_length NUM_TYPES
 
