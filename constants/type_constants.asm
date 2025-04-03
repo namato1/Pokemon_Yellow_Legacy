@@ -17,6 +17,7 @@ DEF UNUSED_TYPES EQU const_value
 DEF UNUSED_TYPES_END EQU const_value
 
 ; SPECIAL continued, doing this maintains trade functionality with crystal
+DEF SPECIAL EQU const_value
 	const FIRE         ; $14
 	const WATER        ; $15
 	const GRASS        ; $16

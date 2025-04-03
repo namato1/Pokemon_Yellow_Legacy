@@ -1141,7 +1141,7 @@ SubstituteAnim:
 	battle_anim NO_MOVE, SE_SUBSTITUTE_MON
 	db -1 ; end
 
-ShadowBallAnum:
+ShadowBallAnim:
 	battle_anim CONFUSION, SE_FLASH_SCREEN_LONG
 	battle_anim NO_MOVE, SE_WAVY_SCREEN
 	db -1 ; end
