@@ -3,7 +3,7 @@ ViridianForestWildMons:
 	db  4, CATERPIE
 	db  4, WEEDLE
 	db  7, PIDGEY
-	db  7, KAKUNA
+	db  7, BULBASAUR
 	db  5, ODDISH
 	db  6, METAPOD
 	db  6, ODDISH

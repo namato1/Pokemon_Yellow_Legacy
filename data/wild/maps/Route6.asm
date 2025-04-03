@@ -15,7 +15,7 @@ Route6WildMons:
 	def_water_wildmons 3 ; encounter rate
 	db 10, PSYDUCK
 	db 15, PSYDUCK
-	db 15, PSYDUCK
+	db 15, SQUIRTLE
 	db 15, PSYDUCK
 	db 15, PSYDUCK
 	db 20, PSYDUCK
