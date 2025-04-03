@@ -283,4 +283,4 @@ BillsHouseBillCheckOutMyRarePokemonText:
 
 BillsHouseMachineText:
   text_far _BillsHouseMachineText
-  text_en
+  text_end
