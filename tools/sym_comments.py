@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Usage: python sym_comments.py file.asm [pokeyellow.sym] > file_commented.asm
+Usage: python sym_comments.py file.asm [pokemon_yellow_legacy.sym] > file_commented.asm
 
 Comments each label in file.asm with its bank:address from the sym file.
 """
@@ -12,11 +12,11 @@ import re
 
 def main():
 	if len(sys.argv) not in {2, 3}:
-		print(f'Usage: {sys.argv[0]} file.asm [pokeyellow.sym] > file_commented.asm', file=sys.stderr)
+		print(f'Usage: {sys.argv[0]} file.asm [pokemon_yellow_legacy.sym] > file_commented.asm', file=sys.stderr)
 		sys.exit(1)
 
 	wram_name = sys.argv[1]
-	sym_name = sys.argv[2] if len(sys.argv) == 3 else 'pokeyellow.sym'
+	sym_name = sys.argv[2] if len(sys.argv) == 3 else 'pokemon_yellow_legacy.sym'
 
 	sym_def_rx = re.compile(r'(^{sym})(:.*)|(^\.{sym})(.*)'.format(sym=r'[A-Za-z_][A-Za-z0-9_#@]*'))
 

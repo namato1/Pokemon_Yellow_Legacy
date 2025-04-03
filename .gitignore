@@ -16,8 +16,8 @@
 
 # rgbds extras
 # *.map
-pokeyellow.map
-pokeyellow_debug.map
+pokemon_yellow_legacy.map
+pokemon_yellow_legacy_debug.map
 
 *.sym
 
