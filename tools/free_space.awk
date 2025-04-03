@@ -1,13 +1,13 @@
 #!/usr/bin/gawk -f
 
-# Usage:  tools/free_space.awk [BANK=<bank_spec>] pokeyellow.map
+# Usage:  tools/free_space.awk [BANK=<bank_spec>] pokemon_yellow_legacy.map
 
 # The BANK argument allows printing free space in one, all, or none of the ROM's banks.
 # Valid arguments are numbers (in decimal "42" or hexadecimal "0x2a"), "all" or "none".
 # If not specified, defaults to "none".
 # The `BANK` argument MUST be before the map file name, otherwise it has no effect!
-# Yes:  tools/free_space.awk BANK=all pokeyellow.map
-# No:   tools/free_space.awk pokeyellow.map BANK=42
+# Yes:  tools/free_space.awk BANK=all pokemon_yellow_legacy.map
+# No:   tools/free_space.awk pokemon_yellow_legacy.map BANK=42
 
 # Copyright (c) 2020, Eldred Habert.
 # SPDX-License-Identifier: MIT

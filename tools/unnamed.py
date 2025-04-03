@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Usage: unnamed.py [-h] [-r rootdir] [-l count] pokeyellow.sym
+Usage: unnamed.py [-h] [-r rootdir] [-l count] pokemon_yellow_legacy.sym
 
 Parse the symfile to find unnamed symbols.
 """
@@ -48,8 +48,8 @@ objects = None
 if args.rootdir:
 	for line in subprocess.Popen(['make', '-C', args.rootdir, '-s', '-p', 'DEBUG=1'],
 			stdout=subprocess.PIPE).stdout.read().decode().split('\n'):
-		if line.startswith('pokeyellow_obj :='):
-			objects = line[len('pokeyellow_obj :='):].strip().split()
+		if line.startswith('pokemon_yellow_legacy_obj :='):
+			objects = line[len('pokemon_yellow_legacy_obj :='):].strip().split()
 			break
 	else:
 		print('Error: Object files not found!', file=sys.stderr)
@@ -72,7 +72,7 @@ for line in args.symfile:
 
 # If no object files were provided, just print what we know and exit
 unnamed_percent = 100 * (symbols_total - len(symbols)) / symbols_total
-print(f'Unnamed pokeyellow symbols: {len(symbols)} ({unnamed_percent:.2f}% complete)')
+print(f'Unnamed pokemon_yellow_legacy symbols: {len(symbols)} ({unnamed_percent:.2f}% complete)')
 if not objects:
 	for sym in symbols:
 		print(sym)
