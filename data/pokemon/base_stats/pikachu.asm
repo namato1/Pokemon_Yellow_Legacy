@@ -1,6 +1,6 @@
 	db DEX_PIKACHU ; pokedex id
 
-	db  60,  55,  50,  90,  70
+	db  75,  70,  70,  90,  75
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, ELECTRIC ; type
@@ -18,7 +18,8 @@
 	     DOUBLE_EDGE,  PAY_DAY,      SUBMISSION,   SEISMIC_TOSS, RAGE,         \
 	     THUNDERBOLT,  THUNDER,      MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
-	     SUBSTITUTE,   CUT,    FLY,    SURF,       STRENGTH,     FLASH
+	     SUBSTITUTE,   CUT,    			FLY,    			 SURF,      	 STRENGTH,      \
+		 	 FLASH
 	; end
 
 	db 0 ; padding
