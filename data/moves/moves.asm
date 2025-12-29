@@ -153,7 +153,7 @@ Moves:
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,       100, 20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             50, BUG,          100, 25
 	move LOVELY_KISS,  SLEEP_EFFECT,                 0, TYPELESS,      75, 10
-	move SKY_ATTACK,   NO_ADDITIONAL_EFFECT,        120, FLYING,       85, 10
+	move SKY_ATTACK,   NO_ADDITIONAL_EFFECT,       120, FLYING,       85, 10
 	move TRANSFORM,    TRANSFORM_EFFECT,             0, TYPELESS,     100, 10
 	move BUBBLE,       SPEED_DOWN_SIDE_EFFECT,      10, WATER,        100, 30
 	move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       70, NORMAL,       100, 20
