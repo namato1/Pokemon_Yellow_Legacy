@@ -12,10 +12,10 @@ Moves:
 ; Characteristics of each move.
 	table_width MOVE_LENGTH, Moves
 	move POUND,        NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
-	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING,     95, 25
+	move KARATE_CHOP,  NO_ADDITIONAL_EFFECT,        50, FIGHTING,      95, 25
 	move DOUBLESLAP,   TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,       100, 35
 	move COMET_PUNCH,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, FIGHTING,     100, 25
-	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, NORMAL,        85, 20
+	move MEGA_PUNCH,   NO_ADDITIONAL_EFFECT,        80, FIGHTING,      85, 20
 	move PAY_DAY,      PAY_DAY_EFFECT,              60, NORMAL,       100, 20
 	move FIRE_PUNCH,   BURN_SIDE_EFFECT2,           70, FIRE,         100, 15
 	move ICE_PUNCH,    FREEZE_SIDE_EFFECT,          70, ICE,          100, 15
@@ -35,7 +35,7 @@ Moves:
 	move VINE_WHIP,    NO_ADDITIONAL_EFFECT,        40, GRASS,        100, 25
 	move STOMP,        FLINCH_SIDE_EFFECT2,         65, NORMAL,       100, 20
 	move DOUBLE_KICK,  ATTACK_TWICE_EFFECT,         30, FIGHTING,     100, 30
-	move MEGA_KICK,    NO_ADDITIONAL_EFFECT,       120, NORMAL,        85, 10
+	move MEGA_KICK,    NO_ADDITIONAL_EFFECT,       120, FIGHTING,      85, 10
 	move JUMP_KICK,    JUMP_KICK_EFFECT,            90, FIGHTING,      95, 25
 	move ROLLING_KICK, FLINCH_SIDE_EFFECT2,         70, FIGHTING,     100, 15
 	move SAND_ATTACK,  ACCURACY_DOWN1_EFFECT,        0, TYPELESS,     100, 15
@@ -128,7 +128,7 @@ Moves:
 	move REFLECT,      REFLECT_EFFECT,               0, TYPELESS,     100, 20
 	move FOCUS_ENERGY, FOCUS_ENERGY_EFFECT,          0, TYPELESS,     100, 30
 	move BIDE,         BIDE_EFFECT,                  0, TYPELESS,     100, 10
-	move METRONOME,    METRONOME_EFFECT,             0, TYPELESS,     100, 10
+	move METRONOME,    METRONOME_EFFECT,             0, NORMAL,       100, 10
 	move MIRROR_MOVE,  MIRROR_MOVE_EFFECT,           0, FLYING,       100, 20
 	move SELFDESTRUCT, EXPLODE_EFFECT,             200, NORMAL,       100,  5
 	move EGG_BOMB,     NO_ADDITIONAL_EFFECT,       100, GRASS,        100, 15
@@ -168,11 +168,11 @@ Moves:
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         50, GROUND,        90, 20
 	move REST,         HEAL_EFFECT,                  0, TYPELESS,     100, 10
 	move ROCK_SLIDE,   FLINCH_SIDE_EFFECT1,         75, ROCK,          95, 15
-	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         80, NORMAL,        90, 15
+	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         80, DARK,          90, 15
 	move SHARPEN,      ATTACK_UP1_EFFECT,            0, TYPELESS,     100, 30
 	move CONVERSION,   CONVERSION_EFFECT,            0, TYPELESS,     100, 30
 	move TRI_ATTACK,   BURN_SIDE_EFFECT2,           85, NORMAL,       100, 15
-	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,        90, 10
+	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, DARK,          90, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 20
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, TYPELESS,     100, 10
 	move SHADOW_BALL,  NO_ADDITIONAL_EFFECT,		80, GHOST,		  100, 15
