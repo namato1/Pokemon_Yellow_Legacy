@@ -1607,6 +1607,7 @@ DewgongEvosMoves:
 	db 32, TAKE_DOWN
 	db 40, ICE_BEAM
 	db 50, BLIZZARD
+	db 0
 
 CaterpieEvosMoves:
 ; Evolutions
@@ -1618,7 +1619,6 @@ CaterpieEvosMoves:
 MetapodEvosMoves:
 ; Evolutions
 	db EVOLVE_LEVEL, 10, BUTTERFREE
-	db 7, HARDEN
 	db 0
 ; Learnset
 	db 7, HARDEN
