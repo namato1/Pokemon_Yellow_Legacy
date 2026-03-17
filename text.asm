@@ -35,6 +35,7 @@ INCLUDE "text/SilphCo10F.asm"
 SECTION "Text 2", ROMX
 
 INCLUDE "text/SilphCo11F.asm"
+INCLUDE "text/PokemonMansion2F.asm"
 INCLUDE "text/PokemonMansion3F.asm"
 INCLUDE "text/PokemonMansionB1F.asm"
 INCLUDE "text/SafariZoneEast.asm"
@@ -50,6 +51,7 @@ INCLUDE "text/CeruleanCaveB1F.asm"
 INCLUDE "text/VictoryRoad1F.asm"
 INCLUDE "text/LancesRoom.asm"
 INCLUDE "text/HallOfFame.asm"
+INCLUDE "text/ChampionsRoom.asm"
 INCLUDE "text/LoreleisRoom.asm"
 INCLUDE "text/BrunosRoom.asm"
 INCLUDE "text/AgathasRoom.asm"
@@ -103,11 +105,12 @@ INCLUDE "text/Route5.asm"
 INCLUDE "text/Route6.asm"
 INCLUDE "text/Route7.asm"
 INCLUDE "text/Route8.asm"
+INCLUDE "text/Route9.asm"
 
 
 SECTION "Text 4", ROMX
 
-INCLUDE "text/RedsHouse1F.asm"
+INCLUDE "text/Route9_2.asm"
 INCLUDE "text/Route10.asm"
 INCLUDE "text/Route11.asm"
 INCLUDE "text/Route12.asm"
@@ -124,7 +127,6 @@ INCLUDE "text/Route22.asm"
 INCLUDE "text/Route23.asm"
 INCLUDE "text/Route24.asm"
 INCLUDE "text/Route25.asm"
-INCLUDE "text/PokemonMansion2F.asm"
 
 INCLUDE "data/text/text_4.asm"
 
@@ -133,12 +135,13 @@ SECTION "Text 5", ROMX
 
 INCLUDE "data/text/text_5.asm"
 
-INCLUDE "text/Route9_2.asm"
+INCLUDE "text/RedsHouse1F.asm"
 INCLUDE "text/BluesHouse.asm"
 INCLUDE "text/OaksLab.asm"
 INCLUDE "text/pokedex_ratings.asm"
 INCLUDE "text/ViridianPokecenter.asm"
 INCLUDE "text/ViridianMart.asm"
+INCLUDE "text/ViridianSchoolHouse.asm"
 INCLUDE "text/ViridianNicknameHouse.asm"
 INCLUDE "text/ViridianGym.asm"
 INCLUDE "text/Museum1F.asm"
@@ -179,7 +182,6 @@ INCLUDE "text/VermilionGym.asm"
 INCLUDE "text/VermilionPidgeyHouse.asm"
 INCLUDE "text/VermilionDock.asm"
 
-
 INCLUDE "data/text/text_6.asm"
 
 INCLUDE "text/VermilionOldRodHouse.asm"
@@ -208,6 +210,7 @@ INCLUDE "text/CeladonChiefHouse.asm"
 INCLUDE "text/CeladonHotel.asm"
 INCLUDE "text/FuchsiaMart.asm"
 INCLUDE "text/FuchsiaBillsGrandpasHouse.asm"
+INCLUDE "text/FuchsiaPokecenter.asm"
 INCLUDE "text/WardensHouse.asm"
 INCLUDE "text/SafariZoneGate.asm"
 INCLUDE "text/FuchsiaGym.asm"
@@ -257,8 +260,6 @@ SECTION "Text 9", ROMX
 
 INCLUDE "text/move_deleter.asm"
 INCLUDE "text/move_relearner.asm"
-INCLUDE "text/ChampionsRoom.asm"
-INCLUDE "text/Route9.asm"
 
 INCLUDE "data/text/text_9.asm"
 
