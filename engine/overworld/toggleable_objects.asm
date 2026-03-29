@@ -1,4 +1,4 @@
-MarkTownVisitedAndLoadMissableObjects::
+MarkTownVisitedAndLoadToggleableObjects::
 	ld a, [wCurMap]
 	cp FIRST_ROUTE_MAP
 	jr nc, .notInTown
@@ -7,21 +7,21 @@ MarkTownVisitedAndLoadMissableObjects::
 	ld hl, wTownVisitedFlag   ; mark town as visited (for flying)
 	predef FlagActionPredef
 .notInTown
-	ld hl, MapHSPointers
+	ld hl, ToggleableObjectMapPointers
 	ld a, [wCurMap]
 	ld b, $0
 	ld c, a
 	add hl, bc
 	add hl, bc
-	ld a, [hli]                ; load missable objects pointer in hl
+	ld a, [hli]                ; load toggleable objects pointer in hl
 	ld h, [hl]
 	ld l, a
 	push hl
 	ld a, l
-	sub LOW(MissableObjects)   ; calculate difference between out pointer and the base pointer
+	sub LOW(ToggleableObjectStates)   ; calculate difference between out pointer and the base pointer
 	ld l, a
 	ld a, h
-	sbc HIGH(MissableObjects)
+	sbc HIGH(ToggleableObjectStates)
 	ld h, a
 	ld a, h
 	ldh [hDividend], a
@@ -33,14 +33,14 @@ MarkTownVisitedAndLoadMissableObjects::
 	ld a, $3
 	ldh [hDivisor], a
 	ld b, $2
-	call Divide                ; divide difference by 3, resulting in the global offset (number of missable items before ours)
+	call Divide
 	ld a, [wCurMap]
 	ld b, a
 	ldh a, [hDividend+3]
 	ld c, a                    ; store global offset in c
-	ld de, wMissableObjectList
+	ld de, wToggleableObjectList
 	pop hl
-.writeMissableObjectsListLoop
+.writeToggleableObjectsListLoop
 	ld a, [hli]
 	cp -1
 	jr z, .done     ; end of list

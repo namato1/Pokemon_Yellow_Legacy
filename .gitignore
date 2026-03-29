@@ -15,10 +15,9 @@
 *.patch
 
 # rgbds extras
-# *.map
+*.map
 pokemon_yellow_legacy.map
 pokemon_yellow_legacy_debug.map
-
 *.sym
 
 # tool binaries

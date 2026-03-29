@@ -153,8 +153,8 @@ PalletMovementScript_Done:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	ret nz
-	ld a, HS_PALLET_TOWN_OAK
-	ld [wMissableObjectIndex], a
+	ld a, TOGGLE_PALLET_TOWN_OAK
+	ld [wToggleableObjectIndex], a
 	predef HideObject
 	ld hl, wd730
 	res 7, [hl]
